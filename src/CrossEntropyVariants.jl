@@ -179,7 +179,6 @@ Cross-entropy mixture method. Same as `ce_surrogate` but using mixture models.
 """
 function ce_mixture(f, 𝐌; kwargs...)
     𝐌 = MixtureModel([𝐌])
-    @show 𝐌
     return ce_surrogate(f, 𝐌; kwargs...)
 end
 

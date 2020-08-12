@@ -2,7 +2,7 @@
 
 
 Cross-entropy method variants for optimization. Each method takes an objective function `f` and proposal distribution `𝐌`. 
-* Cross-entropy method (standard): [`cross_entropy_method(f, 𝐌)`](https://github.com/mossr/CrossEntropyVariants.jl/blob/master/src/CrossEntropyVariants.jl#L228)
+* Cross-entropy method (standard): [`cross_entropy_method(f, 𝐌)`](https://github.com/mossr/CrossEntropyVariants.jl/blob/master/src/CrossEntropyVariants.jl#L227)
 * Cross-entropy surrogate method: [`ce_surrogate(f, 𝐌)`](https://github.com/mossr/CrossEntropyVariants.jl/blob/master/src/CrossEntropyVariants.jl#L65)
 * Cross-entropy mixture method: [`ce_mixture(f, 𝐌)`](https://github.com/mossr/CrossEntropyVariants.jl/blob/master/src/CrossEntropyVariants.jl#L180)
 
