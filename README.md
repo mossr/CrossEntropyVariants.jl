@@ -1,12 +1,13 @@
 # CrossEntropyVariants.jl
 
+[![arXiv](https://img.shields.io/badge/arXiv-2009.09043-b31b1b.svg)](https://arxiv.org/abs/2009.09043)
 
 Cross-entropy method variants for optimization. Each method takes an objective function `f` and proposal distribution `𝐌`. 
 * Cross-entropy method (standard): [`cross_entropy_method(f, 𝐌)`](https://github.com/mossr/CrossEntropyVariants.jl/blob/master/src/CrossEntropyVariants.jl#L227)
 * Cross-entropy surrogate method: [`ce_surrogate(f, 𝐌)`](https://github.com/mossr/CrossEntropyVariants.jl/blob/master/src/CrossEntropyVariants.jl#L65)
 * Cross-entropy mixture method: [`ce_mixture(f, 𝐌)`](https://github.com/mossr/CrossEntropyVariants.jl/blob/master/src/CrossEntropyVariants.jl#L180)
 
-See paper for full explanation of each method: [`Cross-Entropy Method Variants for Optimization`](http://web.stanford.edu/~mossr/pdf/cem_variants.pdf)
+See paper for full explanation of each method: [`Cross-Entropy Method Variants for Optimization`](https://arxiv.org/abs/2009.09043)
 
 ![Contour plots of CEM variants](https://github.com/mossr/CrossEntropyVariants.jl/blob/master/figures/cem-variants.png)
 
@@ -50,3 +51,12 @@ Test objective functions such as [`branin`](https://github.com/mossr/CrossEntrop
 Included is a new parameterized test objective function called `sierra` with many local minima and a single global minimum. Refer to the [paper](http://web.stanford.edu/~mossr/pdf/cem_variants.pdf) for a full description (also see [`sierra.jl`](https://github.com/mossr/CrossEntropyVariants.jl/blob/master/src/sierra.jl)).
 
 ![Sierra test function](https://github.com/mossr/CrossEntropyVariants.jl/blob/master/figures/sierra-function.png)
+
+# Citation
+    @misc{moss2020crossentropy,
+        title={Cross-Entropy Method Variants for Optimization},
+        author={Robert J. Moss},
+        year={2020},
+        eprint={2009.09043},
+        archivePrefix={arXiv}
+    }
